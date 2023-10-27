@@ -1,0 +1,13 @@
+
+package boletin09_2;
+
+public class Boletin09_2 {
+
+    public static void main(String[] args) {
+        Sumador sumador=new Sumador();
+        sumador.sumarNumeros();
+        Multiplicador multiplicador=new Multiplicador();
+        multiplicador.multiplicarNumeros();
+    }
+    
+}
