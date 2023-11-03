@@ -9,13 +9,13 @@ public class BoletinExtra06_2 {
         int ano;
         do{
             dia=LerDatos.lerEnteiro("Introduce un dia:");
-                    }while(dia<=1&&dia>=31);
+                    }while(dia<1||dia>31);
         do{
             mes=LerDatos.lerEnteiro("Introduce un mes:");
-                    }while(mes<=1&&mes>=12);
+                    }while(mes<1||mes>12);
         do{
             ano=LerDatos.lerEnteiro("Introduce un ano entre 1600 e 3000:");
-                    }while(ano<=1600&&ano>=3000);
+                    }while(ano<1600||ano>3000);
         Comprobador.esFechaValida(dia, mes, ano);
         JOptionPane.showMessageDialog(null, Comprobador.esFechaValida(dia, mes, ano));
     }
