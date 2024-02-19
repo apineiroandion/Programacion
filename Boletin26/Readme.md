@@ -24,30 +24,7 @@ La clase `Numero` representa una colección de números y proporciona un método
 ## Diagrama de Clases
 
 El siguiente diagrama muestra la relación entre las clases en este proyecto:
-```plantuml
-@startuml
 
-class Numero {
-    - numeros: ArrayList<Integer>
-    + iniciarArray(): void
-}
-
-class Operaciones<T extends Comparable<T>> {
-    + minimo(List<T>): T
-    + maximo(List<T>): T
-    + buscar(List<T>, T): int
-    + borrarPrimeraAparicion(List<T>, T): T
-}
-
-Numero -- Operaciones
-
-@enduml
-## Uso
-
-Para utilizar las clases `Operaciones` y `Numero`, sigue estos pasos:
-
-1. Crea una instancia de `Numero`.
-2. Llama al método `iniciarArray()` para inicializar la lista de números.
-3. Crea una instancia de `Operaciones` y utiliza sus métodos para realizar las operaciones deseadas en la lista de números.
+//www.plantuml.com/plantuml/png/RP11IiOm48NtESKiVwczG2cXnPKWwY8NcAQ333H9cKcb8jxTDBIWy6SNliTxNp9eHibRM8nVK1LUjq2IuDj0EIt4UjKEHX7yUc7D_NFCz45YQw81ZkmPfVBRGmUVYMVpOywwjvK4FQT8sZkWFLES5PvIM55mMgXtrfvZ3OJI5TAjhZXRkjm5SByFfaqzoWKUmHN6CLyqYQ2y2mSI7CiY7oR_q-vmFH_TjdzzpL1SZu_v1G00
 
 
